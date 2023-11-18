@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CalcCss.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="Index.js" language="javascript" type="text/javascript"></script>
+</head>
+
+<body class="col d-flex justify-content-center">
+    <div class="col-md-5 col-lg-3 col-xs-10 col-sm-7 mt-5 custom-card" id="maindiv">
+
+        <div>
+            <input type="text" id="TextInput" style="text-align:right;">
+        </div>
+        <table id="table">
+
+            <tr>
+                <td>
+                    <button class="button " Id="btn7" onclick="OneFuncToAllbtn(this.id)">7</button>
+                </td>
+                <td>
+                    <button class="button" Id="btn8" onclick="OneFuncToAllbtn(this.id)">8</button>
+
+                </td>
+                <td>
+                    <button class="button  " Id="btn9" onclick="OneFuncToAllbtn(this.id)">9</button>
+
+                </td>
+                <td>
+                    <button class="button  " id="btnDivide" onclick="OneFuncToAllbtn(this.id)">/</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button class="button  " id="btn4" onclick="OneFuncToAllbtn(this.id)">4</button>
+                </td>
+                <td>
+                    <button class="button  " id="btn5" onclick="OneFuncToAllbtn(this.id)">5</button>
+                </td>
+                <td>
+                    <button class="button  " id="btn6" onclick="OneFuncToAllbtn(this.id)">6</button>
+                </td>
+                <td>
+                    <button class="button  " id="btnMultiply" onclick="OneFuncToAllbtn(this.id)">x</button>
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <button class="button  " id="btn1" onclick="OneFuncToAllbtn(this.id)">1</button>
+                </td>
+                <td>
+                    <button class="button  " id="btn2" onclick="OneFuncToAllbtn(this.id)">2</button>
+                </td>
+                <td>
+                    <button class="button  " id="btn3" onclick="OneFuncToAllbtn(this.id)">3</button>
+
+                </td>
+                <td>
+                    <button class="button  " id="btnSub" onclick="OneFuncToAllbtn(this.id)">-</button>
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    <button class="button  " id="btnBckSpc" onclick="btnBckSpc()"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-backspace" viewBox="0 0 16 16">
+                            <path
+                                d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z" />
+                            <path
+                                d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z" />
+                        </svg></i></button>
+                </td>
+
+                <td>
+                    <button class="button  " id="btnZero" onclick="OneFuncToAllbtn(this.id)">0</button>
+                </td>
+                <td rowspan="2">
+                    <button class="button  " id="btnEqual" style="height:120px;width:100%"
+                        onclick="btnEqual_click()">=</button>
+                </td>
+
+                <td rowspan="2">
+                    <button class="button" Id="btnAdd" style="height:120px;width:100%"
+                        onclick="OneFuncToAllbtn(this.id)">+</button>
+
+                </td>
+
+            </tr>
+            <tr>
+
+                <td>
+                    <button class="button" id="btnClear" onclick="btnClear_click()">AC</button>
+                </td>
+                <td>
+                    <button class="button" id="btnPoint" onclick="btnPoint_Click()">.</button>
+                </td>
+
+            </tr>
+
+        </table>
+
+
+
+
+
+</body>
+
+</html>
