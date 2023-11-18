@@ -1,7 +1,6 @@
 let elementVal, elementVal1, textbox, txtval, lastValue, currrentVal, LastIndex;
 let prevValue, NextValue, ValIndex;
 let myAraay = [];
-
 function txtboxValue(elementVal1) 
 {
      textbox = document.getElementById("TextInput");
@@ -28,7 +27,6 @@ function txtboxValue(elementVal1)
                currrentVal = elementVal1;
                }
           }
-
      }
      else {
 
@@ -49,9 +47,7 @@ function txtboxValue(elementVal1)
                         // myAraay.push(elementVal1);   
                     }
                    
-                         myAraay.push(elementVal1);
-                    
-                    
+                    myAraay.push(elementVal1);                  
                     textbox.value += elementVal1;
                     currrentVal = "";
                     console.log(myAraay);
@@ -73,8 +69,7 @@ function txtboxValue(elementVal1)
                               else
                               {
                                    myAraay[0] += (elementVal1);  
-                              }
-                            
+                              }                           
                          }
                          else
                          {
@@ -110,32 +105,21 @@ function txtboxValue(elementVal1)
                }
                else {
                     myAraay[myAraay.length] += elementVal1;
-               }
-             
+               }           
                //textbox.value += elementVal1;
                currrentVal = "";
-               console.log(myAraay);
-              
-          }
-          
+               console.log(myAraay);            
+          }         
      }
      var arrayString = myAraay.join('');
      textbox.value = arrayString;
 
 }
-
-
-
-
-
 function btnClear_click() {
      textbox = document.getElementById("TextInput");
      textbox.value = "";
-      myAraay = [];
-     
+      myAraay = [];     
 }
-
-
 function OneFuncToAllbtn(btnId)
 {
      elementVal = document.getElementById(btnId);
@@ -161,17 +145,14 @@ function btnBckSpc()
           else
           {
                myAraay[myAraay.length - 1] = slicedNum;
-          }
-         
+          }       
       }
        else 
-       {
-          
+       {         
           myAraay.splice((myAraay.length - 1), 1)[0];
       }
      
      textbox.value = myAraay.join("");
-
 }
 
 function btnEqual_click() {
@@ -211,11 +192,9 @@ function btnEqual_click() {
                      else
                          {
                               myAraay.splice((DivideIndex), 1)[0];
-                         }
-                  
+                         }           
                     FinalResult = myAraay[myAraay.length - 1];
                     console.log(myAraay);
-
                }
                else 
                {
@@ -330,13 +309,8 @@ function btnEqual_click() {
                     }
                     else{}
                 }
-
-          }
-
-        
-          
+          }     
      } while (myAraay.length > 1)
-
      if(Number.isInteger(parseFloat(FinalResult)))
      {
           textbox.value = FinalResult;
@@ -348,8 +322,4 @@ function btnEqual_click() {
           textbox.value = FinalResult.toString().replace(/(\.\d*?[1-9])0+$/, "$1");
           myAraay = [];
      }
-    
-
-
-
 }
